@@ -168,7 +168,8 @@
   .sldr {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1rem;
+    margin: auto 0;
+    /*margin-bottom: 1rem;*/
     padding-bottom: 1rem;
     overflow-x: auto;
   }
@@ -178,6 +179,7 @@
 
   .simg {
     margin:.5rem; padding: .5rem;
+    max-height: 125px;
     box-shadow: 1px 1px 4px rgba(0,0,0,.3), 3px 4px 6px rgba(0,0,0,.3);
     border-radius: 2px;
     transition: all .25s ease;
@@ -246,10 +248,16 @@
 /*STYLES FOR JS.HTML ONLY*/
   .row>.sldr {
     justify-content: center; 
-    margin: 0;
+    margin: auto 0;
     overflow-x: hidden; 
   }
   .crd.row {display: flex; flex-direction: column-reverse;}
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+  }
 
   @media only screen and (min-width: 576px) {
     .crd.row {display: flex; flex-direction: row;} 
