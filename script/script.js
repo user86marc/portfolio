@@ -146,3 +146,110 @@
 		}, false);
 	})();	
 
+// Smart List
+var close = document.getElementsByClassName("close");
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var list = document.querySelector("UL");
+var xx = document.getElementsByClassName("list");
+var i;
+
+// Add new item to list
+button.addEventListener("click", addListAfterClick);
+input.addEventListener("keypress", addListAfterKeypress);
+
+function inputLength() {
+	return input.value.length;
+}
+
+function createListElement() {
+	var li = document.createElement("li");
+	li.appendChild(document.createTextNode(input.value));
+	list.appendChild(li);
+	input.value = "";
+
+	var span = document.createElement("SPAN");
+	var txt = document.createTextNode("\u00D7");
+	span.className = "close";
+	span.appendChild(txt);
+	li.appendChild(span);
+
+	  close.forEach = (i) => {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+		// OLD
+		// for (i = 0; i < close.length; i++) {
+		//  close[i].onclick = function() {
+		//    var div = this.parentElement;
+		//    div.style.display = "none";
+		//  }
+  }
+}
+
+function addListAfterClick() {
+	if (inputLength() > 0 ) {
+		createListElement();
+	}
+}
+
+function addListAfterKeypress(event) {
+	if (inputLength() > 0 && event.keyCode === 13) {
+		createListElement();
+	}
+}
+
+// Add close button to existing items
+for (i = 0; i < xx.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  xx[i].appendChild(span);
+}
+
+// Click item to add strike-through
+list.addEventListener("click", function(strike) {
+	if (strike.target.tagName === "LI"); {
+		strike.target.classList.toggle("done");
+	}
+}, false);
+
+// Click close button to remove item
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Background Generator
+// var css = document.querySelector("h3");
+// var color1 = document.querySelector(".color1");
+// var color2 = document.querySelector(".color2");
+// var body = document.getElementById("gradient");
+ 
+// function setGradient() {
+// 	body.style.background =
+// 	 "linear-gradient(to bottom, " + color1.value + ", " + color2.value + ")no-repeat fixed center center";
+// 	 css.textContent = body.style.background + ";";
+// }
+
+// color1.addEventListener("input", setGradient);
+// color2.addEventListener("input", setGradient);
+// 
+// Let's make a random generator
+// function getRandomInt(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// setInterval(function() {
+//     var element = document.getElementById("box");
+//     //generate random red, green and blue intensity
+//     var r = getRandomInt(0, 255);
+//     var g = getRandomInt(0, 255);
+//     var b = getRandomInt(0, 255);
+    
+//     element.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+// }, 1500);
