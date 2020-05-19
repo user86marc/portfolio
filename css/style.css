@@ -56,7 +56,6 @@
     a:link, a:visited, .meni {text-decoration: none; color: deepskyblue;} 
     a:link:active, a:visited:active {color: limegreen;}
     .t-c {text-align: center;}
-
 /* MENU STYLING */
   button.cmen {
     z-index: 4;
@@ -105,8 +104,7 @@
     padding-left: 1rem;
   }
   .drpdwn:hover .drpd, .drpdwn:active {display: block;}
-
-/*MODAL POP-UP*/
+/* MODAL POP-UP */
   @keyframes pop {
     from {top: 100px; opacity: 0;}
     to {top: 0px; opacity: 1;}
@@ -148,22 +146,20 @@
   @media only screen and (min-width: 576px) {
     .mpop {height: 594px; width: 576px;}
   }
-
 /* CARDS */
   /*  .cnt {position: relative; top: 40vh;}
   @media only screen and (min-height: 640px) {
     .cnt {top: 60vh;}
   }
   #home.cnt {top: 0;}*/
-
   .crd {
     z-index: 1;
     margin: auto;
     padding:  3rem 1rem;
     max-width: 576px;
     border: 1px solid lightcyan;
-  }
- 
+  }  
+  .cnt {margin-top: 4rem;}
 /* SLIDER */
   .sldr {
     display: flex;
@@ -208,14 +204,24 @@
   @media only screen and (min-width: 576px) {
     .popo>div {max-width: 450px; max-height: 450px;}
   }
-
 /* HOME */
-  #home, #things, #tech, #ed {margin-top: 4rem;}
   #home>div>p.sbtl {margin-bottom: 1rem;}
   #keywords > p.sbtl {margin: 0;}
-
-sl/*#tech>div>h3 {margin: 1rem 0 0 0;}*/
-
+/* TECH */
+  .tcol {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-width: 140px;
+    min-height: 60px;
+    align-items: center;
+  }
+  .t-img {
+    display: flex;
+    margin: auto 1rem;
+    max-width: 140px;
+    max-height: 60px;
+  }
 /* FOOTER */
   #footer {height: 8.5rem; border: none;}
   #footer>.crd {
@@ -243,134 +249,3 @@ sl/*#tech>div>h3 {margin: 1rem 0 0 0;}*/
     transform: scale(1.1);
     transition: all .25s ease;
   }
-
-/*STYLES FOR JS.HTML ONLY*/
-  .row>.sldr {
-    justify-content: center; 
-    margin: auto 0;
-    overflow-x: hidden; 
-  }
-  .crd.row, .show-box>.row {
-    display: flex; flex-direction: column-reverse;
-    padding: 0; border: none;
-  }
-
-  .show-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem; padding: 0; 
-    width: 100%;
-    /*border: none;*/
-  }
-
-  .left {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-  }
-
-  @media only screen and (min-width: 576px) {
-    .crd.row {display: flex; flex-direction: row;} 
-    .row>.sldr {margin: auto; padding: 0;} 
-  }
-
-  /* Drag n Drop specific */ 
-  .show-box>.row>ol {height: 180px; width: 180px;}
-
-  @media only screen and (min-width: 400px) {
-    .show-box>.row {display: flex; flex-direction: row;}
-  }
-
-  /*#list>.mpop>.row {margin: 0 auto;}*/
-  ol>p {color: lightgreen; font-size: 1.1rem;}
-
-  [data-draggable="target"] {
-    /*float: left;    */
-    margin: 0.5rem; padding: 0.5rem;
-    overflow-y: auto;
-    border: 2px solid aqua;
-    border-radius: 3px;
-    background: #222;
-    list-style-type: none;
-    color: aqua; 
-  }
-
-  [data-draggable="item"] {
-    display: block;
-    margin-top: .8rem;
-    list-style-type: none;
-    transition: .5s;
-  }
-
-  [data-draggable="item"]:hover {
-    cursor: grab;
-    text-shadow: 1px 1px 3px #000000;
-  }
-  
-  [data-draggable="item"]:active {
-    cursor: grabbing;
-    transform: scaleX(0.9);
-    color: limegreen;
-  }
-
-  /* Cat typewriter specific*/
-  #type>.mpop>div {
-    display: flex;
-    margin: 1rem auto; margin-top: 2rem;  
-    box-shadow: 1px 1px 4px rgba(0,0,0,.4); 
-    box-shadow: 4px 4px 14px rgba(0,0,0,.4); 
-  }
-  .show-box>div>img {margin-top: 1rem;}
-  /*#type>.mpop>h3, #type>.mpop>span, a>p.sbtl {margin: 0 15%;}*/
-  /*#type>.mpop>h3 {margin-bottom: .5rem;}*/
-  a>p.sbtl {text-align: right;}
-
-/*SMART LIST*/
-  #enter, #userinput {
-  margin: 1rem 0; padding: 5px 15px;
-  border: none;
-  border-radius: 8px;
-  background-color: ghostwhite;
-}
-
-.show-box>ul {
-  text-align: left;
-  margin: auto;
-  padding: 0;
-  cursor: pointer;
-  min-width: 290px; 
-  list-style: none;
-}
-.show-box>ul>li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.5em;
-  font-size: 1em;
-  transition: 0.2s;
-}
-.show-box>ul>li:hover {
-  padding: 0.3em;
-  font-size: 1.2em;
-  text-shadow: 0px 0px 8px /*#0d0d0d*/ black;
-}
-.done {text-decoration: line-through;}
-span.close {text-decoration: none; justify-content: flex-end;}
-
-/* TECH HEX 
-/*  .tcol {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    min-width: 140px;
-    min-height: 60px;
-    align-items: center;
-  }
-  .t-img {
-    display: flex;
-    margin: auto 1rem;
-    max-width: 140px;
-    max-height: 60px;
-  }*/
-  
