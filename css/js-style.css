@@ -116,14 +116,13 @@
 
   /*Need to be able to delete items*/
 
-  #store>.show-box {
+  #store>div>.show-box {
     display: flex;
     justify-content: center;
     /*align-items: center;*/
     min-height: 400px;
     /*box-sizing: border-box;*/
-    background: url('https://source.unsplash.com/random/600×400/?taco') 
-    center no-repeat;
+    background: url('https://source.unsplash.com/random/600×400/?taco') center no-repeat;
     background-size: cover;
     text-align: center;
   }
