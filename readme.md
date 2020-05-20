@@ -3,16 +3,14 @@
 	<h1>My Portfolio</h1>
 </div>	
 
+![bonsai](./img/bonsai.svg)
 
-
-
-
+<div><img src="./img/bonsai.svg" width="100"></div>
 
 <p>This is a portfolio page that will have it's own repo (with downloadable pdf), but can also be plugged into another site, i.e., webstorm.app.  
 
 The new webstorm.app will be based on this template/format but is going to become a SPA made with React.js.</p>
 
-<hr>
 -----------------------------------------------------------
 <h2>Introductions</h2>
 
