@@ -68,18 +68,18 @@ In the meantime here is what can still be improved:
 The new webstorm.app will have the folllowing sections:
 
 	- Landing Page
-		- Hi there, My name is Marc ...
+	 - Hi there, My name is Marc ...
 	- Why
-		- Add value
-		My experience as an innovator and manager in different fields ...
-		- Features
-		Top tech in the world of web dev
+	 - Add value
+	  My experience as an innovator and manager in different fields ...
+	 - Features
+	  Top tech in the world of web dev
 	- How
-		- How we/I work
-		- Things we have made (links to this very portfolio)
-		Might be fun to have a little drop down to select which slider to show
-		- Complete tech stack
-		- Where and How we/I have Studied 
+	 - How we/I work
+	 - Things we have made (links to this very portfolio)
+	  Might be fun to have a little drop down to select which slider to show
+	 - Complete tech stack
+	 - Where and How we/I have Studied 
 	- What
-		- Payments options
-		- Contact and links to LI, CP, GH
+	 - Payments options
+	 - Contact and links to LI, CP, GH
