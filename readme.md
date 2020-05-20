@@ -1,11 +1,20 @@
-# My Portfolio
+<div align="center">
+	<img src="https://octodex.github.com/images/dunetocat.png" width="200">
+	<h1>My Portfolio</h1>
+</div>	
 
-This is a portfolio page that will have it's own repo (with downloadable pdf), but can also be plugged into another site, i.e., webstorm.app.  
 
-The new webstorm.app will be based on this template/format but is going to become a SPA made with React.js.
 
+
+
+
+<p>This is a portfolio page that will have it's own repo (with downloadable pdf), but can also be plugged into another site, i.e., webstorm.app.  
+
+The new webstorm.app will be based on this template/format but is going to become a SPA made with React.js.</p>
+
+<hr>
 -----------------------------------------------------------
-## Introductions
+<h2>Introductions</h2>
 
 ### My Unique VP
 
