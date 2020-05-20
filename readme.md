@@ -1,136 +1,85 @@
-<div align="center">
-	<img src="https://octodex.github.com/images/dunetocat.png" width="200">
-	<h1>My Portfolio</h1>
-</div>	
-
-![bonsai](./img/bonsai.svg)
-
 <div><img src="./img/bonsai.svg" width="100"></div>
 
-<p>This is a portfolio page that will have it's own repo (with downloadable pdf), but can also be plugged into another site, i.e., webstorm.app.  
+# My portfolio
 
-The new webstorm.app will be based on this template/format but is going to become a SPA made with React.js.</p>
+This is my portfolio page as a Full Stack Web Developer, focused on the Javascript ecosystem including: React, Node, & PostgreSQL.
 
------------------------------------------------------------
-<h2>Introductions</h2>
+----------------------------------------------------------
+## Scope / about
 
-### My Unique VP
+I have studied under Zero to Mastery: The Complete Web Developer in 2020 on [Udemy](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery).
+I am currently on the Senior to Mastery course, and continuously working to improve my JS capabilities.
 
-### Keywords
+As of May 2020, I am actively on the Job hunt in Cape Town, South Africa.
 
-### Critical Skills
+This hage is pure HTML, CSS, & JS. No bootstrap, no templates.
+I love dark-theme, and the inspiration for this page came from [State of JS](https://stateofjs.com).
 
-		Design, develop and maintain Web applications
-		Prioritise User Experience (responsiveness, speed, ease of use)
-		Prioritise Security (Independant backend and frontend auththentication)
-		Contribute to the design and maintenance of underlying database objects
-		Willing and Able to learn new tools and frameworks as needed
+----------------------------------------------------------
+## Project status
 
-		Experience managing various teams (highly educated vs labour force)
-		Contribute to strategic planning (financial and operations)
-		Emphasis on creating enjoyable work environment
+The initial form is complete.
+I will continue to add the list projects and also work to improve on the code.
 
-		Ability to self-manage and be proactive
-		Focus on effeciency and productivity
-		Plays nicely with others 
-		Ever curious and totally pumped up :)
+----------------------------------------------------------
+## Tech used
 
+	- HTML 
+	- CSS 
+	- JS 
+	- NPM 
+	- GitBash
 
------------------------------------------------------------
-## Tech Stack
+----------------------------------------------------------
+## Future Plans
 
-Front end
-JS, React, Boostrap - Redux, Gatsby
+### First wave
 
-Back End 
-Node.js, Postman, PostgreSQL
+	1. Add icons to index.html for the new JS projects
 
-Deployment
-Netlify, Heroku, GH pages - wp
+### Second wave
 
-Environment
-SumblimeText3 Git GitHub CodePen NPM
+This page will form the basis for the new webstorm.app that will be made with React as a PWA
+In the meantime here is what can still be improved:
 
-Media
-Inkscape OBS Studio ezgif iloveimg
+	1. Do another open source
+	2. Add to Complete tech Stack
+	3. Code reviews on my JS code
+	4. Add more to JS page
+	5. Add Bonus page - fun stuff/more about me
+	6. turn all headings into accordians
+	7. Icon Hover shows the name
+	8. Menu bar hides until hover or screen touch like on video players
+	9. Animate things (eg menu icon) to make it more interesting
+	10. add pdf download to footer
+	11. add resources links to footer
 
-Admin
-WaveApps, TimeSquared, Samsung Notes, GitJournal, G-Suite
+----------------------------------------------------------
+## Resources
 
------------------------------------------------------------
-## Minimum Viable Product
-
-1. Iron out brief intro and Unqiue VP
-2. JS Page - tidy up existing
-
-Second level
-1. Refurbish js code
-2. Do one more open source
-3. Add to Complete tech Stack
-4. add more to JS page
-5. Add Bonus page
-6. turn all headings into accordians
-7. Icon Hover shows the name
-8. Menu bar hides until hover or screen touch like on video players
-9. Animate things (eg menu icon) to make it more interesting
-10. add pdf download to footer
-11. add resources links to footer
+  - [Icons](www.flaticon.com)
+  - [Pictures](www.unsplash.com)
 
 -----------------------------------------------------------
-## Structure
+## Additional Info
 
-While the new webstorm.app will have the folllowing sections:
+### Structure
 
-	Landing Page
-		Hi there, My name is Marc and I work under the labels Webstorm or Phat Marc.  I am isatiably doing what I want.
-	why
-		add value
-			My experience as a innovator and manager in different fields
-		features
-			Top tech in the world of web
-	how
-		how we work
-		Things we have made
-			Might be fun to have a little drop down to select which slider to show
-		Complete tech stack
-		Where and How I/we have Studied 		// inclusion debateable 
-	What
-		payments options
-		Contact and links to other
+The new webstorm.app will have the folllowing sections:
 
-This Portfolio page will have these sections:
-
-	It's Meee! Phat Marc:)
-		Intro 					// very concise - why I add value
-			Who is this guy
-			Unique skills or VP
-		Things I have made
-			Dynamic Web Apps
-				Faceapp, Roboapp, Star Wars/my own API app
-			Static sites
-				DVA, Geo, Old Webstorm
-			JavaScript 		//Prove advanced JS capability, not the easy stuff
-				ZTM JS, JS30, JS Challenges
-					example, example, example, 
-				<!-- clicking on any of these examples opens a new tab with a page that has all these interactive examples-->
-			Open Source
-				Time, other 1, other 2
-		My complete tech stack
-		Where and How I have Studied + beez kneez
-			ZTM: Junior to Senior
-			ZTM: Zero to Mastery
-			Wes Bos: JS30
-			FreeCodeCamp: html & CSS
-
-		History 				// maybe - do this last
-		Fun stuff				// more about me, hobbies etc.
-		Contact
-
-Javascript portfolio
-
-	<!-- js-summary under \study is the actual summaries where these examples are taken from and presented here -->
-		ZTM JS:					tips, list(also on CP), calculator,
-		JS30: 					clock, click n drag(also on CP), Whack a Mole
-		JS Challenges: 	Santas helper, CH6, other
-
-
+	- Landing Page
+		- Hi there, My name is Marc ...
+	- Why
+		- add value
+				My experience as an innovator and manager in different fields ...
+		- features
+				Top tech in the world of web dev
+	- How
+		- how we/I work
+		- things we have made (links to this very portfolio)
+				Might be fun to have a little drop down to select which slider to show
+		- complete tech stack
+		- Where and How we/I have Studied 
+	- What
+		- payments options
+		- contact and links to LI, CP, GH
