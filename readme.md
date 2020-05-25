@@ -1,4 +1,4 @@
-<div><img src="./img/bonsai.svg" width="100"></div>
+<div><img src="./img/bonsai.svg" width="150"></div>
 
 # My Portfolio
 
@@ -12,7 +12,7 @@ I am currently on the Junior to Senior course, and continuouing to work on impro
 
 As of May 2020, I am actively on the Job hunt in Cape Town, South Africa.
 
-This hage is pure HTML, CSS, & JS. No bootstrap, no templates.
+This page is pure HTML, CSS, & JS. No bootstrap, no templates.
 I love dark-theme, and the inspiration for this page came from [State of JS](https://stateofjs.com).
 
 ----------------------------------------------------------
