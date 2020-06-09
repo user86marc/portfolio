@@ -116,7 +116,7 @@
 
   /*Need to be able to delete items*/
 
-  #store>div>.show-box {
+  #taco>div>.show-box {
     display: flex;
     justify-content: center;
     /*align-items: center;*/
