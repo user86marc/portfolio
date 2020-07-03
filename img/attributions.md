@@ -1,6 +1,6 @@
 flaticons
 	robo - Good Ware
-	scan - Pixelmeetup
+	scan - Freepik
 	bonsai - Smashicons
 	noodle - Smashicons
 	menu - Smashicons

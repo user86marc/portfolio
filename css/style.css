@@ -29,16 +29,14 @@ footer {margin-top: 0;}
 .crd {
   z-index: 1;
   padding: 2rem 1.5rem;
-  max-width: 560px;
+  width: 550px;
   border: 1px solid lightcyan;
 }  
-
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: none;
 }
-
 .col {
   display: flex;
   flex-direction: column;
@@ -56,7 +54,7 @@ footer {margin-top: 0;}
 @media only screen and (min-width: 1200px) {
   .crd {    
     padding: 3rem 2.5rem;
-    max-width: 760px;
+    width: 600px;
   }
 }
 
@@ -87,7 +85,7 @@ button {
   background: none;
 }
 
-a:link, a:visited {
+a:link, a:visited, .meni {
   padding: .15rem 0;
   text-decoration: none;
   color: deepskyblue;
@@ -167,11 +165,24 @@ a.imbx:hover {
 }
 
 /* NAV ICON */
-.menu {
-  width: 100%;
-  background-color: #2a2a2e;
-}
+.menu {width: 100%; background-color: #2a2a2e;}
 .micon {padding: 1rem;}
+
+.navo {margin: 0 auto; max-width: 360px;}
+.meni {
+  width: 328px;
+  text-align: left;
+  transition: all .15s ease;}
+.meni:hover {transform: translateY(-2px);}
+.active {
+  padding-left: 1rem;
+  background-color: green;
+  color: white;
+}
+.down {display: inline-block; margin: 0 10px;}
+.down:hover, .down:active {color: ghostwhite;}
+.drpd {display: none; padding-left: 1rem;}
+.drpdwn:hover .drpd, .drpdwn:active {display: block;}
 
 /* FOOTER ICONS */
 .ficon {
@@ -184,7 +195,6 @@ a.imbx:hover {
   box-shadow: 3px 4px 5px rgba(0,0,0,.4);
   transition: all .2s ease-out;
 }
-
 .ficon:hover {
   cursor: pointer;
   transform: scale(1.1);
