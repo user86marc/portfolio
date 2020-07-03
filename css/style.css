@@ -1,251 +1,192 @@
-/* GLOBALS */
-  /* Color Guide */
-    /* Nice dark greys (darker to lighter) */
-    /* background-color: #27272a; */
-    /* background-color: #2a2a2e; */
-    /* background-color: #38383d; */
-    /* Headings */
-      /* color: limegreen; */
-      /* color: orange; */
-      /* color: turquoise; */
-      /* Body */
-      /* ghostwhite;  */
-      /* Other stuff */
-      /* color: deepskyblue; */
-      /* color: aqua; */
-  /* Fonts */
-    /* font-family: 'Arvo', serif; */
-    /* font-family: 'Roboto', sans-serif; (400/500) */
-  /* HTML, BODY */
-    html, body {
-      margin: 0;
-      padding: 0;
-      background-color: #2a2a2e;
-      font-family: 'Roboto', sans-serif; font-weight: 400;
-      color: ghostwhite;
-    }
-  /* HEADINGS AND P */
-    h1, h2, h3 {font-family: 'Arvo', sans-serif;}
-    h1 {color: limegreen; font-size: 1.8rem;}
-    h2 {color: orange; font-size: 1.5rem; margin: 0;}
-    h3 {color: turquoise; font-size: 1.2rem; margin: .5rem 0;}
-    p, li, button.meni {
-      margin-bottom: 0;
-      font-size: .95rem;
-      line-height: 1.25rem;
-      letter-spacing: .25rem;
-    }
-    p.sbtl, p#keys {
-      margin: 0;
-      margin-bottom: 2rem;
-      opacity: .9;
-      font-size: .9rem;
-      font-style: italic;
-    }
-    p#keys {margin-bottom: 0; text-align: center;}
-    em {opacity: 1; color: aqua; font-weight: 500;}
-    ul {padding-right: 2rem;}
-  /* BUTTON GLOBAL */
-    button {
-      padding: 1rem;
-      border: none;
-      background: none;
-    }
-  /* <a> LINK GLOBAL */
-    a {transition: all .1s ease;}
-    a:link, a:visited, .meni {text-decoration: none; color: deepskyblue;} 
-    a:link:active, a:visited:active {color: limegreen;}
-    .t-c {text-align: center;}
-/* MENU STYLING */
-  button.cmen {
-    z-index: 4;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0; left: 0;
-    width: 100vw;
-    margin: 1.5rem auto; padding: .5rem;
-    background-color: #2a2a2e;
-  }
-  @media only screen and (min-width: 576px) {
-    button.cmen {width: 610px;}
-  }
+/* CONTAINERS */
+html, body {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  background-color: #2a2a2e;
+  font-family: 'Roboto', sans-serif; font-weight: 400;
+  color: ghostwhite;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-  .imen {width: 2rem;  height: 2rem;}
-  button.clse {
-    margin-right: auto; padding: .5rem 1rem; 
-    font-size: 2rem; 
-    text-decoration: none;
-  }
+section, nav, footer {margin: 3rem auto; margin-top: 1rem;}
+section {
+  box-shadow: 
+    4px 4px 8px rgba(30,30,30, 0.3), 
+    8px 8px 12px rgba(30,30,30,.6); }
+nav {
+  margin-bottom: 0;
+  position: sticky;
+  top: 0; left: 0;
+  width: 100%;
+}
+footer {margin-top: 0;}
 
-    /* Also see <a> and <p> under Globals, above*/
-  button.meni {margin-top: 1rem; padding: 0; }
-  .meni {
-    width: 328px;
-    text-align: left;
-    transition: all .15s ease;}
-  .meni:hover {transform: translateY(-1px); text-shadow: 1px 1px 2px rgba(0,0,0,.8);}
-  .meni:active {transform: translateY(-1px); text-shadow: 0 0 0 rgba(0,0,0,1);}
-  .meni.active {
-    padding-left: 1rem;
-    background-color: green;
-    color: white;
-  }
+.crd {
+  z-index: 1;
+  padding: 2rem 1.5rem;
+  max-width: 560px;
+  border: 1px solid lightcyan;
+}  
 
-  /*Instead of rotating, i could use js to alter an nth number in the string so that
-    the unicode points to a left triangle*/
-  .down {display: inline-block; margin: 0 10px;}
-  .down:hover, .down:active {color: ghostwhite;}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+}
 
-  .navo {padding: 0 1rem;}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
-  .drpd {
-    display: none;
-    padding-left: 1rem;
-  }
-  .drpdwn:hover .drpd, .drpdwn:active {display: block;}
-/* MODAL POP-UP */
-  @keyframes pop {
-    from {top: 100px; opacity: 0;}
-    to {top: 0px; opacity: 1;}
-  }
-  .mover {
-    z-index: 5;
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #27272a;
-    background: linear-gradient(to bottom, #27272a, #2a2a2e); 
-    }
-
-  .mover:target {
-    display: flex; position: fixed;
-    justify-content: center; align-items: center;
-  }
-
-  .mpop {
-    display: block;
-    position: relative;
-    padding: 1rem;
-    height: 100%;
-    /*max-height: 500px;*/
-    max-height: 80vh;
-    width: 576px;
-    width: 360px;
-    overflow-y: scroll;
-    background-color: #2a2a2e;
-    /*background: linear-gradient(to bottom, #2a2a2e, #38383d);*/
-    background: linear-gradient(to right, #3b4b5b, #27354a) no-repeat center center fixed; 
-    box-shadow: 3px 6px 9px rgba(0,0,0,.2);
-    animation-name: pop;
-    animation-duration: 0.5s;
-  }
-  @media only screen and (min-width: 576px) {
-    .mpop {height: 594px; width: 576px;}
-  }
-/* CARDS */
-  /*  .cnt {position: relative; top: 40vh;}
-  @media only screen and (min-height: 640px) {
-    .cnt {top: 60vh;}
-  }
-  #home.cnt {top: 0;}*/
+/* BREAKPOINTS */
+@media only screen and (max-width: 600px) {
   .crd {
-    z-index: 1;
-    margin: auto;
-    padding:  3rem 1rem;
-    max-width: 576px;
-    border: 1px solid lightcyan;
-  }  
-  .cnt {margin-top: 4rem;}
-/* SLIDER */
-  .sldr {
-    display: flex;
-    flex-direction: row;
-    margin: auto 0;
-    /*margin-bottom: 1rem;*/
-    padding-bottom: 1rem;
-    overflow-x: auto;
+    padding: 1.5rem .5rem;
+    max-width: 360px;    
+    flex-wrap: wrap;
   }
-  .row {
-    display: flex;
-    flex-direction: row;}
+}
+@media only screen and (min-width: 1200px) {
+  .crd {    
+    padding: 3rem 2.5rem;
+    max-width: 760px;
+  }
+}
 
-  .simg {
-    margin:.5rem; padding: .5rem;
-    max-height: 125px;
-    box-shadow: 1px 1px 4px rgba(0,0,0,.3), 3px 4px 6px rgba(0,0,0,.3);
-    border-radius: 2px;
-    transition: all .25s ease;
-  }
-  .simg:hover {
-    box-shadow: 1px 1px 4px rgba(0,0,0,.4), 3px 4px 8px rgba(0,0,0,.4);
-    transform: scale(1.05); cursor: pointer;
-  }
-  .simg:active {box-shadow: 1px 1px 3px rgba(0,0,0,.3), 1px 2px 3px rgba(0,0,0,.3);}
-  .ipop {filter: invert(.8); width: 100px; height: 100px;}
-  .ipop:hover {filter: invert(1);}
-  .ipop:active {filter: invert(.6);}
+/* GLOBAL STYLE */
+.t-c {text-align: center;}
 
-  /* this is for non icon icons that have color*/
-  /*.cinv {filter: brightness(.8); width: 100px; height: 100px;}*/
-  .cinv {max-height: 400px;}
+h1, h2, h3 {font-family: 'Arvo', sans-serif;}
+h1 {color: limegreen; font-size: 1.8rem;}
+h2 {color: orange; font-size: 1.5rem; margin: 0;}
+h3 {color: turquoise; font-size: 1.2rem; margin: .5rem 0;}
+p, li {
+  font-size: .875rem;
+  line-height: 1.15rem;
+  letter-spacing: .02rem;
+} 
+.sbtl {
+  margin: 0;
+  font-size: .75rem;
+  font-style: italic;
+}
 
-  /* MODAL POP UP IMG 400x400*/
-  .popo>div {
-    display: flex;
-    max-width: 328px;
-    filter: invert(0)
-  }
-  .popo {display: flex; flex-direction: column; 
-    align-items: center;}
-  @media only screen and (min-width: 576px) {
-    .popo>div {max-width: 450px; max-height: 450px;}
-  }
-/* HOME */
-  #home>div>p.sbtl {margin-bottom: 1rem;}
-  #keywords > p.sbtl {margin: 0;}
-/* TECH */
-  .tcol {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    min-width: 140px;
-    min-height: 60px;
-    align-items: center;
-  }
-  .t-img {
-    display: flex;
-    margin: auto 1rem;
-    max-width: 140px;
-    max-height: 60px;
-  }
-/* FOOTER */
-  #footer {height: 8.5rem; border: none;}
-  #footer>.crd {
-    padding-top: 4rem;
-    /*border: 1px solid rgba(25,25,35,.8);*/
-    border: none;    
-    background-color: #2a2a2e;
-    /*background-color: #27272a;*/
-    text-align: center;
-  }
+em {opacity: 1; color: aqua; font-weight: 500;}
+ul {padding: 0; padding-left: 1.25rem;}
 
-  .lkcn {
-    margin: .5em;
-    width: 32px; height: 32px;
-    overflow: hidden;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 3px 4px 5px rgba(0, 0, 0, .5);
-    transition: all .2s ease-out;
-  }
+button {  
+  padding: 0;
+  border: none;
+  background: none;
+}
 
-  .lkcn:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all .25s ease;
-  }
+a:link, a:visited {
+  padding: .15rem 0;
+  text-decoration: none;
+  color: deepskyblue;
+}
+a:link:active, a:visited:active {
+  color: limegreen;
+}
+
+/* SPECIFIC STYLING */
+/* IMG-ICONS */
+a.imbx {
+  margin: 1rem; padding: 1rem;
+  box-shadow: 
+    1px 1px 3px rgba(0,0,0,.3), 
+    1px 3px 5px rgba(0,0,0,.2);
+  border-radius: 3px;
+  transition: all .2s ease-in;
+}
+a.imbx:hover {
+  box-shadow: 
+    1px 1px 3px rgba(0,0,0,.35), 
+    2px 4px 6px rgba(0,0,0,.25);
+}
+.imgi {width: 150px; height: 150px;}
+
+/* MODEL */
+@keyframes pop {
+  from {top:100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+.mod-o {
+	z-index: 5;
+  display: none;
+  position: fixed;
+  left: 0; top: 0;  
+  width: 100%; height: 100%; 
+  background-color: #2a2a2e;
+  background: linear-gradient(to bottom, #27272a, #2a2a2e);
+}
+.mod-o:target {
+  display: flex; position: fixed;
+	justify-content: center; align-items: center;
+}
+.mod-b {
+  display: block;
+  position: relative;
+	height: 80vh; width: 560px;  
+  overflow-y: none;
+  margin: auto; padding: 2rem 0;  
+  background-color: #2a2a2e;
+  background: linear-gradient(to right, #3b4b5b, #27354a) no-repeat center center fixed; 
+  box-shadow: 3px 6px 9px rgba(0,0,0,0.2);
+  animation-name: pop;
+  animation-duration: 0.5s;
+}
+
+.cont-v {width: 360px;}
+
+/* CLOSE BUTTON */
+.clse {
+  display: flex;
+  margin: 0 auto; 
+  width: 360px;
+  font-size: 1.5rem; 
+}
+
+/* TEC STACK */
+.sldr {
+  margin-top: .75rem;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+}
+.t-img {
+  margin: auto 1.75rem;
+  max-width: 140px;
+  max-height: 40px;
+}
+
+/* NAV ICON */
+.menu {
+  width: 100%;
+  background-color: #2a2a2e;
+}
+.micon {padding: 1rem;}
+
+/* FOOTER ICONS */
+.ficon {
+  margin: .5em;
+  width: 32px; height: 32px;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 3px 4px 5px rgba(0,0,0,.4);
+  transition: all .2s ease-out;
+}
+
+.ficon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all .25s ease;
+}

@@ -67,6 +67,10 @@
     transform: scaleX(0.9);
     color: limegreen;
   }
+
+  .mew {
+    max-height: 200px;
+  }
 /* Cat typewriter specific */
   #type>.mpop>div {
     display: flex;
