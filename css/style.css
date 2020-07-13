@@ -113,8 +113,8 @@ a.imbx:hover {
 
 /* MODEL */
 @keyframes pop {
-  from {top:100px;opacity: 0;}nav
-  to {top:0 ; opacity: 1 ;}
+  from {top: 100px; opacity: 0;}
+  to {top: 0; opacity: 1;}
 }
 .mod-o {
 	z-index: 5;
