@@ -29,7 +29,8 @@ footer {margin-top: 0;}
   z-index: 1;
   padding: 2rem 1.5rem;
   width: 550px;
-  border: 1px solid lightcyan;
+  border: 1px solid #9ae6c1;
+  /* border: 1px solid lightcyan; */
 }  
 .row {
   display: flex;
@@ -62,9 +63,9 @@ footer {margin-top: 0;}
 .t-c {text-align: center;}
 
 h1, h2, h3 {font-family: 'Arvo', sans-serif;}
-h1 {color: limegreen; font-size: 1.8rem;}
-h2 {color: orange; font-size: 1.5rem; margin: 0;}
-h3 {color: turquoise; font-size: 1.2rem; margin: .5rem 0;}
+h1 {color: #9ae6c1; font-size: 1.8rem;}
+h2 {color: #e6c19a; font-size: 1.5rem; margin: 0;}
+h3 {color: #c19ae6; font-size: 1.2rem; margin: .5rem 0;}
 p, li {
   font-size: .875rem;
   line-height: 1.15rem;
@@ -176,8 +177,8 @@ a.imbx:hover {
 .meni:hover {transform: translateY(-2px);}
 .active {
   padding-left: 1rem;
-  background-color: green;
-  color: white;
+  background-color: #9ae6c1;
+  color: #2a2a2e;
 }
 .down {display: inline-block; margin: 0 10px;}
 .down:hover, .down:active {color: ghostwhite;}
