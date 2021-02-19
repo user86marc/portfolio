@@ -34,14 +34,23 @@ I love dark-theme, and the inspiration for this page came from [State of JS](htt
 
 ### First Wave
 
-	1. Add my most recent work experieces.
+	1. Add my most recent work experieces under new orange heading: Place(s) I've worked.
+	2. Fix up project icons 
+   	1. They can start off smaller
+   	2. Make them pop better on hover
+   	3. Do something better on click.
+	3. Make the modal previews better (and menu modal)
+	4. Go over responsiveness, and test on other browsers (the big 3)
 
 ### Second Wave
 
-This page will form the basis for the new webstorm.app that will be made with React as a PWA
-In the meantime here is what can still be improved:
+Here are some things I would like to improve on my portfolio with:
 
 	1. Build something fun in the Ionic framework :)
+   	1. maybe a game or simple cat pic uploader
+   	2. use security
+   	3. do testing
+   	4. make a database
 	2. Add to / fix up Complete tech Stack section
 	3. Code reviews on my JS code
 	4. Add something cool with JS to the page
@@ -51,6 +60,7 @@ In the meantime here is what can still be improved:
 	8. Animate things (eg menu icon) to make it more interesting
 	9.  Add pdf download to footer
 	10. Add resources links to footer
+	11. Probably need to find some open source project to get back into contributing towards :)
 
 ----------------------------------------------------------
 ## Resources
