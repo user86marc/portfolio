@@ -15,7 +15,9 @@ section, footer {margin: 3rem auto; margin-top: 1rem;}
 section {
   box-shadow: 
     4px 4px 8px rgba(30,30,30,.3), 
-    8px 8px 12px rgba(30,30,30,.6); }
+    8px 8px 12px rgba(30,30,30,.6); 
+  }
+  
 nav {
   position: fixed;
   top: -10px; left: 0;
@@ -28,8 +30,9 @@ footer {margin-top: 0;}
 .crd {
   z-index: 1;
   padding: 2rem 1.5rem;
-  width: 550px;
-  border: 1px solid lightcyan;
+  width: 95vw;
+  max-width: 800px;
+  border: 1px solid #9ae6c1;
 }  
 .row {
   display: flex;
@@ -46,7 +49,6 @@ footer {margin-top: 0;}
 @media only screen and (max-width: 600px) {
   .crd {
     padding: 1.5rem .5rem;
-    max-width: 360px;    
     flex-wrap: wrap;
   }
   .clse, .navo {padding-left: .5rem;}
@@ -54,7 +56,6 @@ footer {margin-top: 0;}
 @media only screen and (min-width: 1200px) {
   .crd {    
     padding: 3rem 2.5rem;
-    width: 600px;
   }
 }
 
@@ -62,17 +63,13 @@ footer {margin-top: 0;}
 .t-c {text-align: center;}
 
 h1, h2, h3 {font-family: 'Arvo', sans-serif;}
-h1 {color: limegreen; font-size: 1.8rem;}
-h2 {color: orange; font-size: 1.5rem; margin: 0;}
-h3 {color: turquoise; font-size: 1.2rem; margin: .5rem 0;}
-p, li {
-  font-size: .875rem;
-  line-height: 1.15rem;
-  letter-spacing: .02rem;
-} 
+h1 {color: #9ae6c1; font-size: 1.8rem;}
+h2 {color: #e6c19a; font-size: 1.6rem; margin: 0;}
+h3 {color: #c19ae6; font-size: 1.4rem; margin: .5rem 0;}
+p, li {font-size: 1.2rem;} 
 .sbtl {
   margin: 0;
-  font-size: .75rem;
+  font-size: 1.15rem;
   font-style: italic;
 }
 
@@ -176,8 +173,8 @@ a.imbx:hover {
 .meni:hover {transform: translateY(-2px);}
 .active {
   padding-left: 1rem;
-  background-color: green;
-  color: white;
+  background-color: #9ae6c1;
+  color: #2a2a2e;
 }
 .down {display: inline-block; margin: 0 10px;}
 .down:hover, .down:active {color: ghostwhite;}
